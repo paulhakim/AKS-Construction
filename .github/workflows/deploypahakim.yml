@@ -10,7 +10,7 @@ jobs:
       templateVersion: 0.8.7
       rg: az-k8s-pahakim-rg
       resourceName: az-k8s-pahakim
-      templateParams: resourceName=az-k8s-pahakim agentCount=1 upgradeChannel=stable agentCountMax=3 custom_vnet=true enable_aad=true AksDisableLocalAccounts=true enableAzureRBAC=true adminPrincipalId=_USER_OBJECT_ID_ registries_sku=Basic acrPushRolePrincipalId=_USER_OBJECT_ID_ omsagent=true retentionInDays=30 networkPolicy=azure azurepolicy=audit authorizedIPRanges=["71.191.55.198/32"] ingressApplicationGateway=true appGWcount=0 appGWsku=WAF_v2 appGWmaxCount=10 appgwKVIntegration=true azureKeyvaultSecretsProvider=true createKV=true keyVaultOfficerRolePrincipalId=_USER_OBJECT_ID_
+      templateParams: resourceName=az-k8s-pahakim agentCount=1 upgradeChannel=stable agentCountMax=3 custom_vnet=true enable_aad=true AksDisableLocalAccounts=true enableAzureRBAC=true adminPrincipalId=_USER_OBJECT_ID_ registries_sku=Basic acrPushRolePrincipalId=_USER_OBJECT_ID_ omsagent=true retentionInDays=30 networkPolicy=azure azurepolicy=audit authorizedIPRanges=["71.191.55.198/32"] ingressApplicationGateway=true appGWcount=0 appGWsku=WAF_v2 appGWmaxCount=10 appgwKVIntegration=true azureKeyvaultSecretsProvider=true createKV=true kvOfficerRolePrincipalId=_USER_OBJECT_ID_
     secrets:
       AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
       AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
